@@ -11,14 +11,13 @@ Tested on Control Node Ubuntu 20.04 LTS. Ansible 2.11.6.
 
 ## Setup Ansible
 
-* Install pip `sudo apt install python3-pip -y`
-* install ansible with pip `pip install ansible`
-* Install requirements `ansible-galaxy collection install -r requirements.yml`
+* Install pip `sudo apt install python3-pip -y`.
+* install ansible with pip `pip install ansible`.
 
 ## Installed Packages
 
 * `OpenJDK 1.8 Headless`   -- Omada only supports Java 8
-* `MongoDB 3.6`    -- Omada Supports 3.4 to 3.6
+* `MongoDB 3.6`    -- Omada Supports 3.4 to 4.0
 * `curl`
 * `jsvc`
 * `tar`
@@ -26,6 +25,7 @@ Tested on Control Node Ubuntu 20.04 LTS. Ansible 2.11.6.
 ## Getting Started
 
 * Clone the repo  `git clone https://github.com/kdpuvvadi/omada-ubuntu-ansible.git omada-ubunt-ansible`.
+* Install requirements `ansible-galaxy collection install -r requirements.yml`.
 * copy `inventory.ini.j2` to `inventory.ini`.
 * Change necessary changes to inventory.
 * copy `vars.yml.j2` to `vars.yml`.
@@ -42,7 +42,8 @@ Tested on Control Node Ubuntu 20.04 LTS. Ansible 2.11.6.
 
 ## Ports
 
-To work properly Omada needs these ports `8088, 8043, 27001, 27002, 29810, 29811, 29812 and 29813` to be open.
+* From v5.0.29 Adoption port has been changed to `29814/tcp`.
+* To work properly Omada needs these ports `8088, 8043, 27001, 27002, 29810, 29811, 29812, 29813 and 29814` to be open.
 
 ## Omada Service on host
 
