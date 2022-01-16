@@ -38,7 +38,7 @@ Tested on Control Node Ubuntu 20.04 LTS. Ansible 2.11.6.
 
 ## Post Install
 
-* Omada controller will be avaiable on `https://HOST-IP:8088/`  or `https://HOST-IP:8043/`.
+* Omada controller will be avaiable on `http://HOST-IP:8088/`  or `https://HOST-IP:8043/`.
 
 ## Ports
 
